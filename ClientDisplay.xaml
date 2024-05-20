@@ -8,7 +8,7 @@
         Title="ClientDisplay"
         Height="450"
         Width="900">
-    
+
     <Grid Background="White">
         <TextBlock 
          HorizontalAlignment="Center" 
@@ -18,26 +18,25 @@
          Margin="0,15,0,0" 
          FontSize="22" 
          FontWeight="Bold"/>
-        
+
         <DataGrid 
-         
          AutoGenerateColumns="False"
          x:Name="TableClients" 
-         Margin="10,10,10,50" 
+         Margin="10,10,10,100" 
          FontFamily="Arial Black" 
          Loaded="LoadClientsToTable" 
          FontSize="11" 
          SelectionChanged="TableClients_SelectionChanged"
          IsReadOnly="True">
-            
+
             <DataGrid.ColumnHeaderStyle>
-                
+
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="HorizontalContentAlignment" Value="Center"/>
                 </Style>
-                
+
             </DataGrid.ColumnHeaderStyle>
-            
+
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ФИО" 
                                  Binding="{Binding FullName}" 
@@ -47,10 +46,6 @@
                                  Binding="{Binding PhoneNumber}" 
                                  Width="100" 
                                  FontFamily="Tahoma"/>
-                <!--<DataGridTextColumn Header="Серия" 
-                                 Binding="{Binding PassportSeries}" 
-                                 Width="70" 
-                                 FontFamily="Tahoma"/>-->
                 <DataGridTemplateColumn Header="Серия">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -58,10 +53,6 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <!--<DataGridTextColumn Header="Номер" 
-                                 Binding="{Binding PassportNumber}" 
-                                 Width="70" 
-                                 FontFamily="Tahoma"/>-->
                 <DataGridTemplateColumn Header="Номер">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -81,12 +72,20 @@
                                  Binding="{Binding ModificationType}" 
                                  Width="*" 
                                  FontFamily="Tahoma"/>
-               
+
             </DataGrid.Columns>
             <DataGrid.Effect>
                 <DropShadowEffect/>
             </DataGrid.Effect>
 
         </DataGrid>
+
+        <!-- Кнопки управления -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <Button x:Name="ChangePhoneNumberButton" Content="Сменить телефон" Width="100" Margin="5" Click="ChangePhoneNumber_Click" Visibility="Collapsed"/>
+            <Button x:Name="EditClientButton" Content="Редактировать" Width="100" Margin="5" Visibility="Collapsed" Click="EditClient_Click"/>
+            <Button x:Name="AddClientButton" Content="Добавить" Width="100" Margin="5" Visibility="Collapsed" Click="AddClient_Click"/>
+            <Button x:Name="GoToMenuButton" Content="В меню" Width="100" Margin="5" Click="GoToMenu_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

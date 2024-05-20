@@ -33,12 +33,27 @@ namespace Wpf_Bank_A.Data
             // Загружаем существующие клиенты
             var clients = LoadClients();
 
-            // Добавляем нового клиента
-            clients.Add(client);
+            // Ищем клиента по его идентификатору (например, по имени или номеру паспорта)
+            var existingClient = clients.FirstOrDefault(c => c.FullName == client.FullName);
+
+            if (existingClient != null)
+            {
+                // Обновляем существующего клиента
+                existingClient.PhoneNumber = client.PhoneNumber;
+                existingClient.LastModificationDateTime = DateTime.Now;
+                existingClient.ModificationType = client.ModificationType;
+                existingClient.ModifiedBy = client.ModifiedBy;
+            }
+            else
+            {
+                // Если клиент не найден, добавляем нового клиента
+                clients.Add(client);
+            }
 
             // Сохраняем обновленный список клиентов
             SaveClients(clients);
         }
+
 
         public List<Client> LoadClients()
         {
