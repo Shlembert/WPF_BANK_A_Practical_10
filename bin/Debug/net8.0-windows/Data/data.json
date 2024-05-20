@@ -1,0 +1,35 @@
+[
+  {
+    "FullName": "Иванов Иван Иванович",
+    "PhoneNumber": "3456789",
+    "PassportSeries": "4567",
+    "PassportNumber": "123456",
+    "CreatedDateTime": "2023-12-01T10:16:47.3473848+03:00",
+    "LastModificationDateTime": "2023-12-01T10:16:47.3473848+03:00",
+    "ModifiedData": null,
+    "ModificationType": 0,
+    "ModifiedBy": null
+  },
+  {
+    "FullName": "Иванова Ирина Иванович",
+    "PhoneNumber": "3456790",
+    "PassportSeries": "4567",
+    "PassportNumber": "123457",
+    "CreatedDateTime": "2023-12-01T10:17:12.5708786+03:00",
+    "LastModificationDateTime": "2023-12-01T10:17:12.5708786+03:00",
+    "ModifiedData": null,
+    "ModificationType": 0,
+    "ModifiedBy": null
+  },
+  {
+    "FullName": "Васичкин Василий Самойлович",
+    "PhoneNumber": "6789090",
+    "PassportSeries": "2345",
+    "PassportNumber": "234567",
+    "CreatedDateTime": "2023-12-01T13:14:35.8898204+03:00",
+    "LastModificationDateTime": "2023-12-01T13:14:35.8898204+03:00",
+    "ModifiedData": null,
+    "ModificationType": 0,
+    "ModifiedBy": null
+  }
+]

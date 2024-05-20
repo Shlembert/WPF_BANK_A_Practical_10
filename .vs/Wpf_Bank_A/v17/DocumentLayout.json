@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\clientdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:clientdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\data\\clientmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:data\\clientmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a\\data\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:data\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientDisplay.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\ClientDisplay.xaml.cs",
+              "RelativeDocumentMoniker": "ClientDisplay.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\ClientDisplay.xaml.cs",
+              "RelativeToolTip": "ClientDisplay.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T07:34:43.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientDisplay.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\ClientDisplay.xaml",
+              "RelativeDocumentMoniker": "ClientDisplay.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\ClientDisplay.xaml",
+              "RelativeToolTip": "ClientDisplay.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T07:25:22.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\Data\\Client.cs",
+              "RelativeDocumentMoniker": "Data\\Client.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\Data\\Client.cs",
+              "RelativeToolTip": "Data\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T07:06:00.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientMaker.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\Data\\ClientMaker.cs",
+              "RelativeDocumentMoniker": "Data\\ClientMaker.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\Data\\ClientMaker.cs",
+              "RelativeToolTip": "Data\\ClientMaker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:44:58.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T05:31:37.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\Wpf_Bank_A\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:31:34.955Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

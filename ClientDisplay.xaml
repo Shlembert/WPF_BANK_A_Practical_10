@@ -1,0 +1,92 @@
+﻿<Window x:Class="Wpf_Bank_A.ClientDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Bank_A"
+        mc:Ignorable="d"
+        Title="ClientDisplay"
+        Height="450"
+        Width="900">
+    
+    <Grid Background="White">
+        <TextBlock 
+         HorizontalAlignment="Center" 
+         TextWrapping="Wrap" 
+         Text="Клиенты" 
+         VerticalAlignment="Top" 
+         Margin="0,15,0,0" 
+         FontSize="22" 
+         FontWeight="Bold"/>
+        
+        <DataGrid 
+         
+         AutoGenerateColumns="False"
+         x:Name="TableClients" 
+         Margin="10,10,10,50" 
+         FontFamily="Arial Black" 
+         Loaded="LoadClientsToTable" 
+         FontSize="11" 
+         SelectionChanged="TableClients_SelectionChanged"
+         IsReadOnly="True">
+            
+            <DataGrid.ColumnHeaderStyle>
+                
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+                
+            </DataGrid.ColumnHeaderStyle>
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО" 
+                                 Binding="{Binding FullName}" 
+                                 Width="200" 
+                                 FontFamily="Tahoma"/>
+                <DataGridTextColumn Header="Телефон" 
+                                 Binding="{Binding PhoneNumber}" 
+                                 Width="100" 
+                                 FontFamily="Tahoma"/>
+                <!--<DataGridTextColumn Header="Серия" 
+                                 Binding="{Binding PassportSeries}" 
+                                 Width="70" 
+                                 FontFamily="Tahoma"/>-->
+                <DataGridTemplateColumn Header="Серия">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="*****"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--<DataGridTextColumn Header="Номер" 
+                                 Binding="{Binding PassportNumber}" 
+                                 Width="70" 
+                                 FontFamily="Tahoma"/>-->
+                <DataGridTemplateColumn Header="Номер">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="*****"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Дата записи" 
+                                 Binding="{Binding CreatedDateTime}" 
+                                 Width="150" 
+                                 FontFamily="Tahoma"/>
+                <DataGridTextColumn Header="Дата изменения" 
+                                 Binding="{Binding LastModificationDateTime}" 
+                                 Width="150" 
+                                 FontFamily="Tahoma"/>
+                <DataGridTextColumn Header="Автор" 
+                                 Binding="{Binding ModificationType}" 
+                                 Width="*" 
+                                 FontFamily="Tahoma"/>
+               
+            </DataGrid.Columns>
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SZf6802hA1GSk+8hvrIx1HRv1X0DnsAMXgstgxYUcWBjgOi8xvTJI+dVs1Yw2CFaMet0fhgzQK4kAfhHg4ATGA==",
+  "success": true,
+  "projectFilePath": "D:\\NET\\Wpf_Bank_A\\Wpf_Bank_A.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Martin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
