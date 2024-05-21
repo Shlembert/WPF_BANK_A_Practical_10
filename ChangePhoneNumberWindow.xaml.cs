@@ -26,10 +26,9 @@ namespace Wpf_Bank_A
             // Получаем новый номер телефона из TextBox
             string newPhoneNumber = PhoneNumberTextBox.Text;
 
-            // Проверка на корректность номера телефона (по желанию)
-
             // Обновляем номер телефона клиента
             selectedClient.PhoneNumber = newPhoneNumber;
+            selectedClient.ModificationType = ModificationType.Консультант;
 
             // Сохраняем изменения
             SaveClientChanges(selectedClient);

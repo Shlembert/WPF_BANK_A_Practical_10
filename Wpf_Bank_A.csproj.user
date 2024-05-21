@@ -7,18 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ChangePhoneNumberWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ClientDisplay.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ChangePhoneNumberWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ClientDisplay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditClientWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

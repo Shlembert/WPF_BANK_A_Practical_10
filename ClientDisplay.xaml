@@ -4,11 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Bank_A"
+        xmlns:data="clr-namespace:Wpf_Bank_A.Data"
+
         mc:Ignorable="d"
         Title="ClientDisplay"
         Height="450"
         Width="900">
 
+    <Window.Resources>
+        <local:SeriesVisibilityConverter x:Key="SeriesVisibilityConverter"/>
+        <local:NumberVisibilityConverter x:Key="NumberVisibilityConverter"/>
+    </Window.Resources>
+    
     <Grid Background="White">
         <TextBlock 
          HorizontalAlignment="Center" 
@@ -30,11 +37,9 @@
          IsReadOnly="True">
 
             <DataGrid.ColumnHeaderStyle>
-
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="HorizontalContentAlignment" Value="Center"/>
                 </Style>
-
             </DataGrid.ColumnHeaderStyle>
 
             <DataGrid.Columns>
@@ -49,14 +54,14 @@
                 <DataGridTemplateColumn Header="Серия">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="*****"/>
+                            <TextBlock Text="{Binding Series, Converter={StaticResource SeriesVisibilityConverter}, ConverterParameter=Менеджер}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Header="Номер">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="*****"/>
+                            <TextBlock Text="{Binding Number, Converter={StaticResource NumberVisibilityConverter}, ConverterParameter=Менеджер}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -72,12 +77,10 @@
                                  Binding="{Binding ModificationType}" 
                                  Width="*" 
                                  FontFamily="Tahoma"/>
-
             </DataGrid.Columns>
             <DataGrid.Effect>
                 <DropShadowEffect/>
             </DataGrid.Effect>
-
         </DataGrid>
 
         <!-- Кнопки управления -->

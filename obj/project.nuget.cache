@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xzdVkbGTHSZ+thkyWLNkWX0Ym8KeO46L/+iXW8cRnfWrO9GV/dOgqGMA4UW4MOiJ9ilwP4y3mtQQHWjVF/YKqA==",
+  "dgSpecHash": "4X4dQGTRFk8PUTZdBtRN6G4BbozxAJ4tt4k3m1Id+PQVGWqb9E7GaVrdXj3m2dfApSFB8ZnH4mS1+pfWAmGG+w==",
   "success": true,
-  "projectFilePath": "D:\\Git\\WPF_BANK_A_Practical_10\\Wpf_Bank_A.csproj",
+  "projectFilePath": "D:\\GitHub\\WPF_BANK_A_Practical_10\\Wpf_Bank_A.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Martin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

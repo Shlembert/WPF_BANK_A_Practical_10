@@ -17,20 +17,21 @@ namespace Wpf_Bank_A.Data
         public DateTime CreatedDateTime { get; set; }
         [DataMember]
         public DateTime LastModificationDateTime { get; set; }
-        // [DataMember]
-        // public string ModifiedData { get; set; }
+        [DataMember]
+        public int Id { get; set; }
         [DataMember]
         public ModificationType ModificationType { get; set; }
         [DataMember]
-        public string ModifiedBy { get; set; }
+        private static int nextId = 1;
 
-        public Client(string fullName, string phoneNumber, string passportSeries, string passportNumber)
+        public Client(string fullName, string phoneNumber, string passportSeries, string passportNumber, ModificationType modificationType)
         {
+            Id = nextId++;
             FullName = fullName;
             PhoneNumber = phoneNumber;
             PassportSeries = passportSeries;
             PassportNumber = passportNumber;
-
+            ModificationType = modificationType;
             CreatedDateTime = DateTime.Now;
             LastModificationDateTime = CreatedDateTime;
         }

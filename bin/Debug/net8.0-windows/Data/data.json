@@ -1,32 +1,22 @@
 [
   {
     "FullName": "Иванов Иван Иванович",
-    "PhoneNumber": "1112233",
-    "PassportSeries": "4567",
-    "PassportNumber": "123456",
-    "CreatedDateTime": "2023-12-01T10:16:47.3473848+03:00",
-    "LastModificationDateTime": "2024-05-20T22:19:08.7206818+03:00",
-    "ModificationType": 0,
-    "ModifiedBy": null
+    "PhoneNumber": "4007898",
+    "PassportSeries": "0001",
+    "PassportNumber": "010102",
+    "CreatedDateTime": "2024-05-21T12:10:24.0354159+03:00",
+    "LastModificationDateTime": "2024-05-21T12:53:54.9426945+03:00",
+    "Id": 1,
+    "ModificationType": 1
   },
   {
-    "FullName": "Иванова Ирина Ивановна",
-    "PhoneNumber": "3456790",
-    "PassportSeries": "4567",
-    "PassportNumber": "123457",
-    "CreatedDateTime": "2023-12-01T10:17:12.5708786+03:00",
-    "LastModificationDateTime": "2023-12-01T10:17:12.5708786+03:00",
-    "ModificationType": 0,
-    "ModifiedBy": null
-  },
-  {
-    "FullName": "Васичкин Василий Самойлович",
-    "PhoneNumber": "6789090",
-    "PassportSeries": "2345",
-    "PassportNumber": "234567",
-    "CreatedDateTime": "2023-12-01T13:14:35.8898204+03:00",
-    "LastModificationDateTime": "2023-12-01T13:14:35.8898204+03:00",
-    "ModificationType": 0,
-    "ModifiedBy": null
+    "FullName": "Сергеев Сергей Сергеевич",
+    "PhoneNumber": "2906767",
+    "PassportSeries": "1212",
+    "PassportNumber": "334433",
+    "CreatedDateTime": "2024-05-21T12:45:21.2392012+03:00",
+    "LastModificationDateTime": "2024-05-21T12:45:21.2392012+03:00",
+    "Id": 4,
+    "ModificationType": 1
   }
 ]

@@ -7,12 +7,17 @@ namespace Wpf_Bank_A
     public partial class ClientDisplay : Window
     {
         private ModificationType modificationType;
+        private ClientMaker clientMaker;
+        private string filePath;
 
         public ClientDisplay(ModificationType modificationType)
         {
             InitializeComponent();
             this.modificationType = modificationType;
+            filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.json");
+            clientMaker = new ClientMaker(filePath);
             ConfigureButtons();
+            SetDataContext();
         }
 
         private void ConfigureButtons()
@@ -31,10 +36,15 @@ namespace Wpf_Bank_A
             }
         }
 
+        private void SetDataContext()
+        {
+            DataContext = this;
+        }
+
+        public ModificationType CurrentModificationType => modificationType;
+
         private void LoadClientsToTable(object sender, RoutedEventArgs e)
         {
-            string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.json");
-            ClientMaker clientMaker = new(filePath);
             TableClients.ItemsSource = clientMaker.LoadClients();
         }
 
@@ -50,7 +60,7 @@ namespace Wpf_Bank_A
                 ChangePhoneNumberWindow changePhoneNumberWindow = new ChangePhoneNumberWindow(selectedClient);
                 if (changePhoneNumberWindow.ShowDialog() == true)
                 {
-                    // Обновляем данные в таблице после смены номера телефона
+                    TableClients.ItemsSource = clientMaker.LoadClients();
                     TableClients.Items.Refresh();
                 }
             }
@@ -60,29 +70,35 @@ namespace Wpf_Bank_A
             }
         }
 
-
         private void EditClient_Click(object sender, RoutedEventArgs e)
         {
-            // Обработка редактирования клиента
             if (TableClients.SelectedItem is Client selectedClient)
             {
-                // Открыть окно для редактирования клиента
+                EditClientWindow editClientWindow = new EditClientWindow(selectedClient);
+                if (editClientWindow.ShowDialog() == true)
+                {
+                    TableClients.ItemsSource = clientMaker.LoadClients();
+                    TableClients.Items.Refresh();
+                }
             }
             else
             {
-                MessageBox.Show("Выберите клиента для редактирования.");
+                MessageBox.Show("Пожалуйста, выберите клиента для редактирования.");
             }
         }
 
         private void AddClient_Click(object sender, RoutedEventArgs e)
         {
-            // Обработка добавления нового клиента
-            // Открыть окно для добавления клиента
+            AddClientWindow addClientWindow = new AddClientWindow();
+            if (addClientWindow.ShowDialog() == true)
+            {
+                TableClients.ItemsSource = clientMaker.LoadClients();
+                TableClients.Items.Refresh();
+            }
         }
 
         private void GoToMenu_Click(object sender, RoutedEventArgs e)
         {
-            // Возврат в меню
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();

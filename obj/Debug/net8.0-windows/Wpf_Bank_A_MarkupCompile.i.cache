@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Git\WPF_BANK_A_Practical_10\obj\Debug\net8.0-windows\
+D:\GitHub\WPF_BANK_A_Practical_10\obj\Debug\net8.0-windows\
 Wpf_Bank_A
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Git\WPF_BANK_A_Practical_10\App.xaml
-3-480494630
+D:\GitHub\WPF_BANK_A_Practical_10\App.xaml
+5-1197438704
 
-10625245641
-199-1839040186
-ChangePhoneNumberWindow.xaml;ClientDisplay.xaml;MainWindow.xaml;
+13921141763
+199301157064
+AddClientWindow.xaml;ChangePhoneNumberWindow.xaml;ClientDisplay.xaml;EditClientWindow.xaml;MainWindow.xaml;
 
-False
+True
 
