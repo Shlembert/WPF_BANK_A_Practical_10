@@ -18,5 +18,15 @@
     "LastModificationDateTime": "2024-05-21T12:45:21.2392012+03:00",
     "Id": 4,
     "ModificationType": 1
+  },
+  {
+    "FullName": "Карась Акакий Полиграфович",
+    "PhoneNumber": "6778899",
+    "PassportSeries": "1230",
+    "PassportNumber": "456123",
+    "CreatedDateTime": "2024-05-22T15:17:10.6294777+03:00",
+    "LastModificationDateTime": "2024-05-22T15:17:10.6294777+03:00",
+    "Id": 3,
+    "ModificationType": 1
   }
 ]

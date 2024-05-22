@@ -52,14 +52,14 @@
                 <DataGridTemplateColumn Header="Серия">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding PassportSeries}" FontFamily="Tahoma"/>
+                            <TextBlock Text="{Binding PassportSeries, Converter={StaticResource SeriesVisibilityConverter}, ConverterParameter=Консультант}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Header="Номер">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding PassportNumber}" FontFamily="Tahoma"/>
+                            <TextBlock Text="{Binding PassportNumber, Converter={StaticResource NumberVisibilityConverter}, ConverterParameter=Консультант}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

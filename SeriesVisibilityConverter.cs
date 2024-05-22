@@ -7,6 +7,8 @@ namespace Wpf_Bank_A
 {
     public class SeriesVisibilityConverter : IValueConverter
     {
+        public ModificationType ModificationType { get; set; }
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (parameter is ModificationType modificationType && modificationType == ModificationType.Консультант)
@@ -27,6 +29,8 @@ namespace Wpf_Bank_A
 
     public class NumberVisibilityConverter : IValueConverter
     {
+        public ModificationType ModificationType { get; set; }
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (parameter is ModificationType modificationType && modificationType == ModificationType.Консультант)
