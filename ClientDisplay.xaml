@@ -4,8 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Bank_A"
-        xmlns:data="clr-namespace:Wpf_Bank_A.Data"
-
         mc:Ignorable="d"
         Title="ClientDisplay"
         Height="450"
@@ -15,26 +13,26 @@
         <local:SeriesVisibilityConverter x:Key="SeriesVisibilityConverter"/>
         <local:NumberVisibilityConverter x:Key="NumberVisibilityConverter"/>
     </Window.Resources>
-    
+
     <Grid Background="White">
         <TextBlock 
-         HorizontalAlignment="Center" 
-         TextWrapping="Wrap" 
-         Text="Клиенты" 
-         VerticalAlignment="Top" 
-         Margin="0,15,0,0" 
-         FontSize="22" 
-         FontWeight="Bold"/>
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            Text="Клиенты" 
+            VerticalAlignment="Top" 
+            Margin="0,15,0,0" 
+            FontSize="22" 
+            FontWeight="Bold"/>
 
         <DataGrid 
-         AutoGenerateColumns="False"
-         x:Name="TableClients" 
-         Margin="10,10,10,100" 
-         FontFamily="Arial Black" 
-         Loaded="LoadClientsToTable" 
-         FontSize="11" 
-         SelectionChanged="TableClients_SelectionChanged"
-         IsReadOnly="True">
+            AutoGenerateColumns="False"
+            x:Name="TableClients" 
+            Margin="10,10,10,100" 
+            FontFamily="Arial Black" 
+            Loaded="LoadClientsToTable" 
+            FontSize="11" 
+            SelectionChanged="TableClients_SelectionChanged"
+            IsReadOnly="True">
 
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
@@ -44,39 +42,39 @@
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ФИО" 
-                                 Binding="{Binding FullName}" 
-                                 Width="200" 
-                                 FontFamily="Tahoma"/>
+                                    Binding="{Binding FullName}" 
+                                    Width="200" 
+                                    FontFamily="Tahoma"/>
                 <DataGridTextColumn Header="Телефон" 
-                                 Binding="{Binding PhoneNumber}" 
-                                 Width="100" 
-                                 FontFamily="Tahoma"/>
+                                    Binding="{Binding PhoneNumber}" 
+                                    Width="100" 
+                                    FontFamily="Tahoma"/>
                 <DataGridTemplateColumn Header="Серия">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Series, Converter={StaticResource SeriesVisibilityConverter}, ConverterParameter=Менеджер}"/>
+                            <TextBlock Text="{Binding PassportSeries}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Header="Номер">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Number, Converter={StaticResource NumberVisibilityConverter}, ConverterParameter=Менеджер}"/>
+                            <TextBlock Text="{Binding PassportNumber}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Дата записи" 
-                                 Binding="{Binding CreatedDateTime}" 
-                                 Width="150" 
-                                 FontFamily="Tahoma"/>
+                                    Binding="{Binding CreatedDateTime}" 
+                                    Width="150" 
+                                    FontFamily="Tahoma"/>
                 <DataGridTextColumn Header="Дата изменения" 
-                                 Binding="{Binding LastModificationDateTime}" 
-                                 Width="150" 
-                                 FontFamily="Tahoma"/>
+                                    Binding="{Binding LastModificationDateTime}" 
+                                    Width="150" 
+                                    FontFamily="Tahoma"/>
                 <DataGridTextColumn Header="Автор" 
-                                 Binding="{Binding ModificationType}" 
-                                 Width="*" 
-                                 FontFamily="Tahoma"/>
+                                    Binding="{Binding ModificationType}" 
+                                    Width="*" 
+                                    FontFamily="Tahoma"/>
             </DataGrid.Columns>
             <DataGrid.Effect>
                 <DropShadowEffect/>

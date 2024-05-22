@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:clientdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\seriesvisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:seriesvisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\editclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:editclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|solutionrelative:clientdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60360B80-C686-4C49-A4E8-DC90A4B9ABFE}|Wpf_Bank_A.csproj|d:\\github\\wpf_bank_a_practical_10\\changephonenumberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -78,8 +74,7 @@
               "RelativeToolTip": "EditClientWindow.xaml.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAkwE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T04:38:43.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T04:38:43.084Z"
             },
             {
               "$type": "Document",
@@ -101,22 +96,9 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAkwCQAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T05:31:34.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SeriesVisibilityConverter.cs",
-              "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\SeriesVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "SeriesVisibilityConverter.cs",
-              "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\SeriesVisibilityConverter.cs",
-              "RelativeToolTip": "SeriesVisibilityConverter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T10:01:45.962Z",
               "EditorCaption": ""
             },
             {
@@ -140,25 +122,24 @@
               "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\EditClientWindow.xaml",
               "RelativeToolTip": "EditClientWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-21T04:38:03.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T04:38:03.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ClientDisplay.xaml.cs",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\ClientDisplay.xaml.cs",
               "RelativeDocumentMoniker": "ClientDisplay.xaml.cs",
               "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\ClientDisplay.xaml.cs",
               "RelativeToolTip": "ClientDisplay.xaml.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGsAAAAAAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAkwGsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T07:34:43.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ChangePhoneNumberWindow.xaml.cs",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\ChangePhoneNumberWindow.xaml.cs",
               "RelativeDocumentMoniker": "ChangePhoneNumberWindow.xaml.cs",
@@ -166,24 +147,22 @@
               "RelativeToolTip": "ChangePhoneNumberWindow.xaml.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAkwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T07:12:51.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T07:12:51.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ChangePhoneNumberWindow.xaml",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\ChangePhoneNumberWindow.xaml",
               "RelativeDocumentMoniker": "ChangePhoneNumberWindow.xaml",
               "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\ChangePhoneNumberWindow.xaml",
               "RelativeToolTip": "ChangePhoneNumberWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-21T04:22:38.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T04:22:38.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AddClientWindow.xaml.cs",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\AddClientWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddClientWindow.xaml.cs",
@@ -191,24 +170,22 @@
               "RelativeToolTip": "AddClientWindow.xaml.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAkwEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T04:40:07.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T04:40:07.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AddClientWindow.xaml",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\AddClientWindow.xaml",
               "RelativeDocumentMoniker": "AddClientWindow.xaml",
               "ToolTip": "D:\\GitHub\\WPF_BANK_A_Practical_10\\AddClientWindow.xaml",
               "RelativeToolTip": "AddClientWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-21T04:39:33.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T04:39:33.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ClientMaker.cs",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\Data\\ClientMaker.cs",
               "RelativeDocumentMoniker": "Data\\ClientMaker.cs",
@@ -216,12 +193,11 @@
               "RelativeToolTip": "Data\\ClientMaker.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAkwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T05:44:58.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T05:44:58.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\Data\\Client.cs",
               "RelativeDocumentMoniker": "Data\\Client.cs",
@@ -229,12 +205,11 @@
               "RelativeToolTip": "Data\\Client.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAkwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T07:06:00.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T07:06:00.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "data.json",
               "DocumentMoniker": "D:\\GitHub\\WPF_BANK_A_Practical_10\\bin\\Debug\\net8.0-windows\\Data\\data.json",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Data\\data.json",
@@ -242,8 +217,7 @@
               "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Data\\data.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-21T07:08:43.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T07:08:43.896Z"
             }
           ]
         }
