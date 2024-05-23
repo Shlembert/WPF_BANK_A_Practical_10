@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Wpf_Bank_A.Data;
 
 namespace Wpf_Bank_A
@@ -25,17 +26,25 @@ namespace Wpf_Bank_A
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
             string newPhoneNumber = PhoneNumberTextBox.Text;
-            user.ChangeClientPhoneNumber(selectedClient, newPhoneNumber);
-            SaveClientChanges(selectedClient);
+
+            // Обновляем только номер телефона у клиента
+            selectedClient.PhoneNumber = newPhoneNumber;
+
+            // Устанавливаем автора изменения на "Консультант"
+            selectedClient.ModificationType = ModificationType.Консультант;
+
+            // Сохраняем изменения только номера телефона
+            SaveClientPhoneNumberChange(selectedClient);
+
             DialogResult = true;
             Close();
         }
 
-        private void SaveClientChanges(Client client)
+        private void SaveClientPhoneNumberChange(Client client)
         {
             string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.json");
             ClientMaker clientMaker = new ClientMaker(filePath);
-            clientMaker.SaveClient(client);
+            clientMaker.SaveClientPhoneNumberChange(client);
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

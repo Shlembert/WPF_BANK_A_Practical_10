@@ -20,13 +20,73 @@
     "ModificationType": 0
   },
   {
-    "FullName": "Карась Акакий Полиграфович",
-    "PhoneNumber": "9504560",
+    "FullName": "Карась Акакий Евлампович",
+    "PhoneNumber": "4956996",
     "PassportSeries": "1234",
     "PassportNumber": "556677",
     "CreatedDateTime": "2024-05-22T15:17:10.6294777+03:00",
-    "LastModificationDateTime": "2024-05-23T10:42:25.434265+03:00",
+    "LastModificationDateTime": "2024-05-23T11:03:55.3301409+03:00",
     "Id": 3,
+    "ModificationType": 1
+  },
+  {
+    "FullName": "Малюск Восминожка Кальмаровна",
+    "PhoneNumber": "6665554",
+    "PassportSeries": "5566",
+    "PassportNumber": "112233",
+    "CreatedDateTime": "2024-05-23T11:18:14.0758355+03:00",
+    "LastModificationDateTime": "2024-05-23T11:18:14.0758355+03:00",
+    "Id": 7,
+    "ModificationType": 1
+  },
+  {
+    "FullName": "Синицын Матвей Андреевич",
+    "PhoneNumber": "7809080",
+    "PassportSeries": "4455",
+    "PassportNumber": "123321",
+    "CreatedDateTime": "2024-05-23T11:30:07.6682983+03:00",
+    "LastModificationDateTime": "2024-05-23T11:30:30.796734+03:00",
+    "Id": 9,
+    "ModificationType": 1
+  },
+  {
+    "FullName": "Гончарова Татьяна Батьковна",
+    "PhoneNumber": "2101439",
+    "PassportSeries": "1122",
+    "PassportNumber": "333222",
+    "CreatedDateTime": "2024-05-23T11:49:47.0055281+03:00",
+    "LastModificationDateTime": "2024-05-23T11:50:08.8074375+03:00",
+    "Id": 11,
+    "ModificationType": 1
+  },
+  {
+    "FullName": "Бубышкин Альберт Макарович",
+    "PhoneNumber": "2304545",
+    "PassportSeries": "7711",
+    "PassportNumber": "345345",
+    "CreatedDateTime": "2024-05-23T11:54:04.3345566+03:00",
+    "LastModificationDateTime": "2024-05-23T11:59:11.5522367+03:00",
+    "Id": 13,
+    "ModificationType": 0
+  },
+  {
+    "FullName": "Пушкин Алексадр Сергеевич",
+    "PhoneNumber": "8907777",
+    "PassportSeries": "3450",
+    "PassportNumber": "102030",
+    "CreatedDateTime": "2024-05-23T11:54:04.3345566+03:00",
+    "LastModificationDateTime": "2024-05-23T11:54:20.4189754+03:00",
+    "Id": 13,
+    "ModificationType": 1
+  },
+  {
+    "FullName": "Вавилов Вндрей Антонович",
+    "PhoneNumber": "2109080",
+    "PassportSeries": "2343",
+    "PassportNumber": "333222",
+    "CreatedDateTime": "2024-05-23T12:01:34.1704005+03:00",
+    "LastModificationDateTime": "2024-05-23T12:01:54.2063592+03:00",
+    "Id": 113,
     "ModificationType": 0
   }
 ]

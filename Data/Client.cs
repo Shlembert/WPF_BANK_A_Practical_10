@@ -36,11 +36,6 @@ namespace Wpf_Bank_A.Data
             LastModificationDateTime = CreatedDateTime;
         }
 
-        public string GetMaskedPassportInfo()
-        {
-            return "******************";
-        }
-
         public string ToJson()
         {
             return JsonConvert.SerializeObject(this);

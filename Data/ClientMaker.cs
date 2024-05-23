@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Wpf_Bank_A.Data
 {
@@ -10,54 +12,57 @@ namespace Wpf_Bank_A.Data
         public ClientMaker(string filePath)
         {
             this.filePath = filePath;
+        }
 
-            string directoryPath = Path.GetDirectoryName(filePath);
-
-            if (!Directory.Exists(directoryPath))
+        public List<Client> LoadClients()
+        {
+            if (File.Exists(filePath))
             {
-                Directory.CreateDirectory(directoryPath);
+                string jsonData = File.ReadAllText(filePath);
+                return JsonConvert.DeserializeObject<List<Client>>(jsonData);
             }
-
-            if (!File.Exists(filePath))
-            {
-                File.WriteAllText(filePath, "[]");
-            }
+            return new List<Client>();
         }
 
         public void SaveClient(Client client)
         {
             var clients = LoadClients();
+            clients.Add(client);
+            SaveClientsToFile(clients);
+        }
 
-            var existingClient = clients.FirstOrDefault(c => c.Id == client.Id);
-
+        public void UpdateClient(Client updatedClient)
+        {
+            var clients = LoadClients();
+            var existingClient = clients.FirstOrDefault(c => c.Id == updatedClient.Id);
             if (existingClient != null)
             {
-                existingClient.FullName = client.FullName;
-                existingClient.PhoneNumber = client.PhoneNumber;
-                existingClient.PassportSeries = client.PassportSeries;
-                existingClient.PassportNumber = client.PassportNumber;
-                existingClient.LastModificationDateTime = DateTime.Now;
-                existingClient.ModificationType = client.ModificationType;
+                existingClient.FullName = updatedClient.FullName;
+                existingClient.PhoneNumber = updatedClient.PhoneNumber;
+                existingClient.PassportSeries = updatedClient.PassportSeries;
+                existingClient.PassportNumber = updatedClient.PassportNumber;
+                existingClient.LastModificationDateTime = updatedClient.LastModificationDateTime;
+                existingClient.ModificationType = updatedClient.ModificationType;
+                SaveClientsToFile(clients);
             }
-            else
+        }
+
+        public void SaveClientPhoneNumberChange(Client updatedClient)
+        {
+            var clients = LoadClients();
+            var existingClient = clients.FirstOrDefault(c => c.Id == updatedClient.Id);
+            if (existingClient != null)
             {
-                clients.Add(client);
+                existingClient.PhoneNumber = updatedClient.PhoneNumber;
+                existingClient.ModificationType = updatedClient.ModificationType;
+                SaveClientsToFile(clients);
             }
-
-            SaveClients(clients);
         }
 
-        public List<Client> LoadClients()
+        private void SaveClientsToFile(List<Client> clients)
         {
-            string json = File.ReadAllText(filePath);
-            List<Client> clients = JsonConvert.DeserializeObject<List<Client>>(json);
-            return clients ?? new List<Client>();
-        }
-
-        private void SaveClients(List<Client> clients)
-        {
-            string json = JsonConvert.SerializeObject(clients, Formatting.Indented);
-            File.WriteAllText(filePath, json);
+            string jsonData = JsonConvert.SerializeObject(clients, Formatting.Indented);
+            File.WriteAllText(filePath, jsonData);
         }
     }
 }

@@ -66,7 +66,7 @@ namespace Wpf_Bank_A
         {
             string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.json");
             ClientMaker clientMaker = new ClientMaker(filePath);
-            clientMaker.SaveClient(client);
+            clientMaker.UpdateClient(client);
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
