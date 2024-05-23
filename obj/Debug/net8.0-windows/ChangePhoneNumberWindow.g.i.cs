@@ -68,7 +68,7 @@ namespace Wpf_Bank_A {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Wpf_Bank_A;component/changephonenumberwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Wpf_Bank_A;V1.0.0.0;component/changephonenumberwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ChangePhoneNumberWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

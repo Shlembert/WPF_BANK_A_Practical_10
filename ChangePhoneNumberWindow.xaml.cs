@@ -6,52 +6,40 @@ namespace Wpf_Bank_A
     public partial class ChangePhoneNumberWindow : Window
     {
         private Client selectedClient;
+        private IUser user;
 
-        public ChangePhoneNumberWindow(Client client)
+        public ChangePhoneNumberWindow(Client client, IUser user)
         {
             InitializeComponent();
             selectedClient = client;
+            this.user = user;
             ClientFullNameTextBlock.Text = selectedClient.FullName;
             PhoneNumberTextBox.Text = selectedClient.PhoneNumber;
         }
 
         private void PhoneNumberTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            // Очищаем поле ввода при фокусировке
             PhoneNumberTextBox.Clear();
         }
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
-            // Получаем новый номер телефона из TextBox
             string newPhoneNumber = PhoneNumberTextBox.Text;
-
-            // Обновляем номер телефона клиента
-            selectedClient.PhoneNumber = newPhoneNumber;
-            selectedClient.ModificationType = ModificationType.Консультант;
-
-            // Сохраняем изменения
+            user.ChangeClientPhoneNumber(selectedClient, newPhoneNumber);
             SaveClientChanges(selectedClient);
-
-            // Закрываем окно
             DialogResult = true;
             Close();
         }
 
-
         private void SaveClientChanges(Client client)
         {
-            // Создаем объект ClientMaker для работы с данными
             string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.json");
             ClientMaker clientMaker = new ClientMaker(filePath);
-
-            // Сохраняем измененного клиента
             clientMaker.SaveClient(client);
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            // Закрываем окно без изменений
             DialogResult = false;
             Close();
         }
