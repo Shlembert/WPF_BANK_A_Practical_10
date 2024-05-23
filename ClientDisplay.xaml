@@ -9,11 +9,6 @@
         Height="450"
         Width="900">
 
-    <Window.Resources>
-        <local:SeriesVisibilityConverter x:Key="SeriesVisibilityConverter"/>
-        <local:NumberVisibilityConverter x:Key="NumberVisibilityConverter"/>
-    </Window.Resources>
-
     <Grid Background="White">
         <TextBlock 
             HorizontalAlignment="Center" 
@@ -52,14 +47,14 @@
                 <DataGridTemplateColumn Header="Серия">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding PassportSeries, Converter={StaticResource SeriesVisibilityConverter}, ConverterParameter=Консультант}" FontFamily="Tahoma"/>
+                            <TextBlock Text="{Binding PassportSeries}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Header="Номер">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding PassportNumber, Converter={StaticResource NumberVisibilityConverter}, ConverterParameter=Консультант}" FontFamily="Tahoma"/>
+                            <TextBlock Text="{Binding PassportNumber}" FontFamily="Tahoma"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

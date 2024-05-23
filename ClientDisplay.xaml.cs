@@ -46,10 +46,6 @@ namespace Wpf_Bank_A
         private void LoadClientsToTable(object sender, RoutedEventArgs e)
         {
             TableClients.ItemsSource = clientMaker.LoadClients();
-            var seriesConverter = (SeriesVisibilityConverter)Resources["SeriesVisibilityConverter"];
-            var numberConverter = (NumberVisibilityConverter)Resources["NumberVisibilityConverter"];
-            seriesConverter.ModificationType = ModificationType.Консультант;
-            numberConverter.ModificationType = ModificationType.Консультант;
         }
 
         private void TableClients_SelectionChanged(object sender, SelectionChangedEventArgs e)
