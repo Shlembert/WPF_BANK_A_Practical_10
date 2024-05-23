@@ -28,6 +28,8 @@ namespace Wpf_Bank_A
                 EditClientButton.Visibility = Visibility.Visible;
                 AddClientButton.Visibility = Visibility.Visible;
             }
+
+            LoadClientsToTable(null, null);
         }
 
         private void LoadClientsToTable(object sender, RoutedEventArgs e)
@@ -89,6 +91,18 @@ namespace Wpf_Bank_A
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
+        }
+
+        private void TableClients_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            if (e.Row.DataContext is Client client)
+            {
+                if (user is Consultant)
+                {
+                    client.PassportSeries = new string('*', client.PassportSeries.Length);
+                    client.PassportNumber = new string('*', client.PassportNumber.Length);
+                }
+            }
         }
     }
 }

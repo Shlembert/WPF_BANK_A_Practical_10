@@ -8,7 +8,6 @@
         Title="ClientDisplay"
         Height="450"
         Width="900">
-
     <Grid Background="White">
         <TextBlock 
             HorizontalAlignment="Center" 
@@ -27,7 +26,8 @@
             Loaded="LoadClientsToTable" 
             FontSize="11" 
             SelectionChanged="TableClients_SelectionChanged"
-            IsReadOnly="True">
+            IsReadOnly="True"
+            LoadingRow="TableClients_LoadingRow">
 
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
